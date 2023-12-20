@@ -1,0 +1,48 @@
+body {
+    
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    position: relative; /* Añadido para poder posicionar la línea */
+}
+
+h4::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 95px; /* Ajusta según necesites para alinear la línea arriba de h4 */
+    bottom: -2px; /* Ajusta según necesites para alinear la línea */
+    left: 50%;
+    width: 100%; /* Ajusta según necesites la longitud de la línea */
+    height: 5px; /* Ajusta según necesites el grosor de la línea */
+    background-color: green;
+    transform: translateX(-50%);
+    
+    
+}
+
+h1, h4 {
+    margin: 0;
+    color: blue;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+

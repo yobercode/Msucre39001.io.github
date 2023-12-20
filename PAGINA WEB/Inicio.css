@@ -1,0 +1,44 @@
+body {
+    background-image: url();
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+h1 {
+    text-align: center;
+    background-image: url(fondodoc.jfif);
+    color: rgb(221, 16, 16);
+    padding: 20px;
+    
+}
+
+video {
+    width: 100%; /* Ajusta el ancho del video según tus preferencias */
+    max-width: 950px; /* Establece un ancho máximo para mantener la proporción de aspecto */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centra el video en la página */
+    
+}
+
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(158, 0, 0);
+   
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(158, 0, 0);
+}
+
+
+    

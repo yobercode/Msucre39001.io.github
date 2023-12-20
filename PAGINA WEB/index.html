@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d618ff44b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>pagina web</title>
+   
+</head>
+<body>
+
+    <!-- Cuadro de Bienvenida -->
+<div id="welcomeBox">
+    <div id="welcomeContent">
+        <p>¡Bienvenido a Mi Página Web! Estamos emocionados de tenerte aquí. 
+            Esta página es tu fuente definitiva para descubrir contenido increíble, 
+            obtener información valiosa y disfrutar de una experiencia única. 
+            Explora nuestras secciones y descubre todo lo que tenemos preparado 
+            para ti. ¡Gracias por visitarnos!</p>
+        <span id="closeBtn" onclick="closeWelcomeBox()">X</span>
+    </div>
+</div>
+
+<!-- Contenido de la Página -->
+<div id="mainContent">
+    <!-- Tu contenido principal va aquí -->
+</div>
+<script src="script.js"></script>
+
+
+    <div class="head">
+
+        <div class="navbar">
+           <a href="">MARISCAL SUCRE</a>
+           <img src="jpglogoinstitucion.jpeg" alt="Logo Institucional">
+        </div>
+    
+
+        <nav class="navbar">
+        
+            
+            <a href="Inicio.html">Inicio</a>
+            <a href="Docentes.html">Docentes</a>
+            <a href="Galeria.html">Galeria</a>
+            <a href="Logros.html">Logros</a>
+            <a href="Actividades.html">Actividades</a>
+            <a href="Ubicacion.html">Ubicacion</a>
+            
+        </nav>
+        
+    </div>
+     
+    <header class="content header">
+        <h1>ANIVERSARIO</h1>
+            <p id="countdown"></p>
+
+            <script>
+                // Definir la fecha del aniversario (año, mes - 1, día, hora, minuto, segundo)
+                var anniversaryDate = new Date(2024, 11, 27, 0, 0, 0); // Asumiendo que el aniversario es el 27 de noviembre de 2024
+            
+                function updateCountdown() {
+                    var currentDate = new Date();
+                    var timeDifference = anniversaryDate - currentDate;
+            
+                    var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+            
+                    document.getElementById("countdown").innerHTML = "Faltan " + days + " días " + hours + " horas " + minutes + " minutos " + seconds + " segundos";
+                }
+            
+                // Actualizar el contador cada segundo
+                setInterval(updateCountdown, 1000);
+            
+                // Llamar a la función inicialmente para evitar un retraso en la visualización
+                updateCountdown();
+            </script>
+        
+        <div class="audio-container">
+            <audio autoplay>
+                <source src="BienvenidaVoz.mpeg" type="audio/mpeg">
+                
+            </audio>
+        </div>
+        
+        <script>
+            window.onload = function() {
+                var audio = document.querySelector('audio');
+                audio.play();
+            };
+        </script>
+        
+        
+    </header>
+
+    <section class="content sau">
+        <h2 class="title">Encuentranos</h2>
+        <p>¡Conéctate con nosotros en las redes sociales!</p>
+
+    <p>En la Escuela Mariscal Sucre, estamos comprometidos en mantenerte 
+            informado sobre nuestras últimas noticias, eventos y logros a través 
+            de nuestras plataformas en línea. Síguenos en nuestras redes sociales 
+            para estar al tanto de todo lo que sucede en nuestra vibrante comunidad 
+            educativa.</p>
+        
+        <p>Únete a nuestra comunidad en línea y sé parte de las conversaciones
+             educativas, descubre momentos destacados y participa en nuestras 
+             actividades. ¡Esperamos conectarnos contigo en el mundo digital!</p>
+       
+        <div class="social-link">
+            <a href="https://m.facebook.com/p/Instituci%C3%B3n-Educativa-Mariscal-SUCRE-100064230453199/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        
+       
+        </div>
+
+
+    </section>
+
+    <section class="content about">
+        <h2 class="title">Nosotros</h2>
+        <p>En nuestra institución, nos dedicamos apasionadamente
+             a la excelencia educativa y al desarrollo integral de nuestros
+              estudiantes. Con una rica tradición de innovación y compromiso, 
+              la Escuela Mariscal Sucre se ha destacado como un referente en la 
+              educación de calidad.</p>
+
+            <p>Nuestro dedicado equipo de educadores trabaja arduamente para fomentar
+             un ambiente de aprendizaje estimulante y seguro. Valoramos no solo el 
+             éxito académico, sino también el crecimiento personal y la formación 
+             de ciudadanos responsables.</p>
+            <p>
+            En la Escuela Mariscal Sucre, cada estudiante es una parte vital de 
+            nuestra comunidad educativa. Fomentamos la curiosidad, la creatividad 
+            y el trabajo en equipo para preparar a nuestros estudiantes para 
+            enfrentar los desafíos del mundo moderno.
+            
+            <p>Te invitamos a visitarnos y descubrir cómo la Escuela Mariscal Sucre 
+            es el lugar perfecto para cultivar el amor por el aprendizaje y construir
+             un futuro brillante. ¡Esperamos verte pronto en nuestro campus!
+        </p>
+        
+    </section>
+
+    <section class="content price">
+        <article class="contain">
+            
+           
+           
+        </article>
+    </section>
+
+    <section class="content Contact">
+            
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-links">
+                        <h4>Institucion</h4>
+                        <ul>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Nuestros Servicios</a></li>
+                            <li><a href="#">Politica de privacidad</a></li>
+                            <li><a href="#">Afiliate</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="#">Preguntas</a></li>
+                            <li><a href="#">Dudas</a></li>
+                            <li><a href="#">Relaciones</a></li>
+                            <li><a href="#">Algo mas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Creador</h4>
+                        <ul>
+                            <li><a href="">Mendoza Rupay Yober</a></li>
+                            <li><a href="https://mobile.facebook.com/home.php">Redes Sociales</a></li>
+                            <li><a href="#">Telefonos</a></li>
+                            <li><a href="#">Desarrollador Developer</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Siguenos</h4>
+                        <div class="social-link">
+                            <a href="https://mobile.facebook.com/home.php" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="linkedin"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+
+        <h2 id="feedback" onclick="toggleFeedback()">Gracias por visitarnos &#128522;</h2>
+    <p>Esta página ha sido visitada <span id="counter">0</span> veces.</p>
+
+        
+        <script>
+           function toggleFeedback() {
+            const feedbackElement = document.getElementById('feedback');
+            const currentFeedback = feedbackElement.innerHTML;
+
+            if (currentFeedback.includes('&#127775;')) {
+                // Cambiar a la carita
+                feedbackElement.innerHTML = 'Gracias por visitarnos &#128522;';
+            } else {
+                // Cambiar a las estrellas
+                feedbackElement.innerHTML = '¡Felicidades! &#127775;';
+            }
+        }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                // Obtener el contador actual almacenado en el almacenamiento local
+                let visitCount = localStorage.getItem('visitCount') || 0;
+        
+                // Incrementar el contador en cada visita
+                visitCount++;
+                
+                // Actualizar el contador en la página
+                document.getElementById('counter').textContent = visitCount;
+        
+                // Guardar el contador actualizado en el almacenamiento local
+                localStorage.setItem('visitCount', visitCount.toString());
+            });
+        </script>
+</body>
+</html>

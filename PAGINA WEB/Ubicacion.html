@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Ubicacion.css">
+    <title>Ubicación de la Escuela</title>
+</head>
+<body>
+
+    <h1>Ubicación de la Escuela</h1>
+
+    <h3>¡Te damos la bienvenida a la ubicación de nuestra escuela! Aquí podrás encontrarnos en el mapa y conocer más sobre nuestra dirección:</h3>
+
+    <p>Nuestra dirección es:</p>
+
+    <address>
+        <strong>Nombre de la Escuela</strong><br>
+        Calle Principal, Número 123<br>
+        Ciudad, Estado, Código Postal<br>
+        País
+    </address>
+
+    <!-- Inserta el mapa de Google Maps aquí -->
+    <div id="map" style="width: 100%; height: 400px; margin-top: 20px;"></div>
+
+    <script>
+        // Puedes agregar el código de integración de Google Maps aquí
+        // Asegúrate de obtener la clave de API de Google Maps y de seguir sus políticas de uso
+
+        function initMap() {
+            // Coordenadas de la ubicación de la escuela
+            var schoolLocation = { lat: 0.0000, lng: 0.0000 }; // Reemplaza con las coordenadas reales
+
+            // Crear un nuevo mapa centrado en la ubicación de la escuela
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: schoolLocation
+            });
+
+            // Agregar un marcador en la ubicación de la escuela
+            var marker = new google.maps.Marker({
+                position: schoolLocation,
+                map: map,
+                title: 'Ubicación de la Escuela'
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap" async defer></script>
+
+</body>
+</html>
+

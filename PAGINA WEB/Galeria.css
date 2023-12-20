@@ -1,0 +1,69 @@
+/* Estilo para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ background-image: url(Fondo.webp);
+}
+
+/* Estilo para el contenedor de la galería */
+.box {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se coloquen en una fila */
+  justify-content: center;
+  overflow-y: auto; /* Hace que la galería sea desplazable verticalmente */
+  align-items: center;
+  gap: 20px; /* Ajusta el espacio entre las imágenes */
+  height: auto;
+  max-height: 600px; /* Establece la altura máxima para la galería */
+}
+
+span {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  perspective: 1000px; /* Establece la perspectiva para las transformaciones 3D */
+  background-color: #9a22df; /* Agrega un color de fondo a las imágenes */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s; /* Agrega una transición suave para la transformación */
+}
+
+span:hover img {
+  transform: rotateY(180deg); /* Rota la imagen 180 grados en el eje Y al pasar el mouse por encima */
+}
+
+/* Estilo para las imágenes en la galería */
+.box span {
+  display: inline-block;
+  width: 150px; /* Ajusta el ancho de la imagen */
+  height: 150px; /* Ajusta la altura de la imagen */
+  margin: 10px;
+  overflow: hidden;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out; /* Agrega una transición suave */
+}
+
+.box span:hover {
+  transform: scale(1.2); /* Hacer que las imágenes se agranden al pasar el mouse sobre ellas */
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+  
+  
+
